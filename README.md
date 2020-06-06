@@ -2,6 +2,8 @@
 
 This is the example application that pairs with the aws-rails.com YouTube tutorials, please check out the [AWS + Rails series](https://www.youtube.com/playlist?list=PL6lusswsNPHG5csQPFjMExe5XQqr1cJvq)
 
+The header logo is blanked out as I purchased then customized this logo.  While I can use this asset I think I would violate the purchase license if it were distributed freely.
+
 In your terminal application cd into the project folder and type `rails notes`.  I have marked several specific lines you will want to update with *#FIXME* notes.
 
 Steps
