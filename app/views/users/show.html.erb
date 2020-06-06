@@ -1,0 +1,10 @@
+<h1><%= @user.full_name %></h1>
+
+<p><strong>Admin:</strong> <%= @user.admin? %></p>
+
+<h2>Bio</h2>
+<p><%= @user.bio %></p>
+
+<% if current_user.id == @user.id %>
+  <%= link_to 'Edit My Profile', edit_user_path(current_user), class: 'btn btn-primary' %>
+<% end %>

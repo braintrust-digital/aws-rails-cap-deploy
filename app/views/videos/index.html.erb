@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container-fluid">
+  <h1>Videos</h1>
+
+  <div class="row">
+    <%= render @videos %>
+  </div>
+
+  <% if user_signed_in? && current_user.admin? %>
+    <%= link_to 'New Video', new_video_path %>
+  <% end %>
+</div>

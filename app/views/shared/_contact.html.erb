@@ -1,0 +1,24 @@
+<article id="contact-form" class="col-sm-9">
+  <h2 class="display-5">Contact Us</h2>
+  <p class="lead">Reach out to say hello or let us know how we can help you</p>
+  <%= form_tag(send_mail_path, class: 'col') do %>
+    <div class="form-label-group">
+      <%= text_field_tag 'name', nil, class: 'form-control form-control-lg', placeholder: 'Name' %>
+      <label for="name">Name</label>
+    </div>
+
+    <div class="form-label-group">
+      <%= email_field_tag 'email', nil, class: 'form-control form-control-lg', placeholder: 'email address' %>
+      <label for="email">Email address</label>
+    </div>
+
+    <div class="form-label-group">
+      <%= text_area_tag 'message', nil, class: 'form-control form-control-lg', rows: 3, placeholder: 'comments' %>
+      <label for="message">Comments</label>
+    </div>
+
+    <div class="btn-gradient">
+      <%= submit_tag nil, class: 'btn btn-transparent' %>
+    </div>
+ <% end %>
+</article>

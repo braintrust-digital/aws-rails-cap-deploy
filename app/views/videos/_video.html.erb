@@ -1,0 +1,9 @@
+<div class="col-6">
+  <h3><%= link_to video.title, video %></h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= video.youtube_id %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <% if user_signed_in? && current_user.admin? %>
+    <%= link_to 'Edit', edit_video_path(video) %>
+    <%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %>
+</div>
